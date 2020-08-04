@@ -1,0 +1,5 @@
+package factorypattern
+
+class VehicleFactory {
+    
+}
