@@ -6,4 +6,9 @@ fun isAnagram(stringOne: String, stringTwo: String): Boolean {
     if (stringOne.length != stringTwo.length) {
         return false
     }
+    val stringOneArray = stringOne.toLowerCase().toCharArray()
+    stringOneArray.sort()
+    val stringTwoArray: CharArray = stringTwo.toLowerCase().toCharArray()
+    stringTwoArray.sort()
+    return stringOneArray.contentEquals(stringTwoArray)
 }
