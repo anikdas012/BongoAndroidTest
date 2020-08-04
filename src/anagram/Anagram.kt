@@ -12,3 +12,10 @@ fun isAnagram(stringOne: String, stringTwo: String): Boolean {
     stringTwoArray.sort()
     return stringOneArray.contentEquals(stringTwoArray)
 }
+
+fun main() {
+    println(isAnagram("eat", "tar"))
+    println(isAnagram("eat", "tae"))
+    println(isAnagram("eat", "taed"))
+    println(isAnagram("table", "bleat"))
+}
